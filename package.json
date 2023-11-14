@@ -1,0 +1,29 @@
+{
+  "name": "diverza_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright-webkit": "^1.37.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@percy/cli": "^1.26.3",
+    "@percy/cypress": "^3.1.2",
+    "cypress": "^13.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.6.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/Buzon_Fiscal_regression"
+  },
+  "keywords": [],
+  "description": ""
+}
